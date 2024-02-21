@@ -1,0 +1,120 @@
+*{
+    /*点を抜く*/
+    list-style: none;
+    /*線を抜く*/
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(jingyu.jpg);
+}
+
+.login{
+    /*真ん中*/
+    margin: 200px auto;
+    width: 400px;
+}
+
+.login-screen{
+    /*loginの背景色*/
+    background-color: rgba(142, 165, 192, 0.5);
+    /*データと周囲の距離*/
+    padding: 20px;
+    /*欄の長さ
+    height: 500px;*/
+    /*四角*/
+    border-radius: 20px;
+}
+
+/*文字【login】真ん中に*/
+.login-title h1{
+    text-align: center;
+}
+
+/*usetとpass　真ん中に*/
+.login-form{
+    text-align: center;
+}
+
+/*user.passと入力欄を分ける*/
+.login-field-icon{
+    display: block;
+}
+
+.control-group{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 250px;
+}
+
+/*入力欄*/
+input{
+    /*背景*/
+    background-color: #ecf0f1;
+    /*选中提示*/
+    border: 2px solid transparent;
+    /*入力欄の角　修正*/
+    border-radius: 50px;
+    /*入力欄内文字のサイズ*/
+    font-size: 16px;
+    /*文字大小*/
+    font-weight: 200;
+    /*入力欄のサイズ*/
+    padding: 10px 0;
+    /*入力欄の長さ*/
+    width: 250px;
+    /*真ん中*/
+    text-align: center;
+    /*微调*/
+    box-sizing: border-box;
+}
+
+/*ボタン*/
+.control-position{
+    text-align: center;
+}
+
+/*ボタンの飾り*/
+.button{
+    /*ボタンの背景色*/
+    background-color: rgb(247,144,161);
+    /*文字色*/
+    color: #fff;
+    /*文字サイズ*/
+    font-size: 20px;
+    /*長さ*/
+    width: 250px;
+    /*幅さ*/
+    padding: 10px 0;
+    /*選択ヒント*/
+    border: 2px solid transparent;
+    /*欄の飾り*/
+    border-radius: 20px;
+}
+
+/*ボタン選択後色ヒント*/
+.button:hover{
+    background-color: #2980b9;
+}
+
+/*アカウント作成*/
+.login-register{
+    /*独立化*/
+    display: block;
+    /*文字サイズ*/
+    font-size: 15px;
+    /*上との距離*/
+    margin-top: 12px;
+}
+
+/*ヒント*/
+.login-link{
+    /*独立化*/
+    display: block;
+    /*文字サイズ*/
+    font-size: 14px;
+    /*文字色*/
+    color: #444;
+    /*上との距離*/
+    margin-top: 12px;
+}
