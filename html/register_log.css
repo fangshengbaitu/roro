@@ -1,0 +1,98 @@
+/*全体設置*/
+*{
+    padding: 0;
+    margin: 0;
+    /*点を除く*/
+    list-style: none;
+    /*下の線を除く*/
+    text-decoration: none;
+    /*文字色*/
+    color: black;
+}
+
+
+/*タイトル*/
+header{
+    /*背景色*/
+    background-color: #fff5ee;
+    /*文字横並び*/
+    display: flex;
+    /*文字と図の距離*/
+    justify-content: space-between;
+    /*垂直*/
+    align-items: center;
+    /*上下との距離*/
+    padding: 10px 0;
+    /*ヘッダー部分を固定*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+body{
+    padding-top: 200px;
+}
+
+/*logoサイズ*/
+.header-logo{
+    width: 100px;
+    /*辺に対する余白*/
+    margin: 10px;
+}
+
+/*画象のサイズ*/
+.header-logo img{
+    width: 100%;
+}
+
+/*menuクラス*/
+.menu{
+    /*文字の横並び*/
+    display: flex;
+    /*文字の間の距離*/
+    gap: 0 20px;
+    /*文字は辺に対する距離*/
+    margin-right: 50px;
+}
+
+/*【新しいブログの追加】の修正*/
+.blog-content h2{
+    /*真ん中*/
+    text-align: center;
+    /*上下との距離*/
+    /*padding: 200px 0px;*/
+}
+
+.blog-content{
+    width: 90%;
+    margin: 0 auto;
+}
+/*【内容】*/
+.list{
+    /*text-align:center;*/
+    width: 20%;
+    margin: 100px auto 20px auto;
+    background-color: chocolate;
+}
+
+.label{
+    width: 100px;
+}
+
+
+.title-1{
+    display: flex;
+    /*justify-content: center;*/
+    gap: 0 20px;
+    margin: 20px 0;
+}
+
+.button{
+    text-align: center;
+    
+}
+
+textarea{
+    resize: vertical;
+}
