@@ -104,3 +104,9 @@ body{
 textarea{
     resize: vertical;
 }
+
+/*【削除】*/
+.delete{
+    text-align: center;
+    padding-top: 20px;
+}

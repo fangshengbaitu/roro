@@ -1,0 +1,150 @@
+/*全体設置*/
+*{
+    padding: 0;
+    margin: 0;
+    /*点を除く*/
+    list-style: none;
+    /*下の線を除く*/
+    text-decoration: none;
+    /*文字色*/
+    color: black;
+}
+
+body{
+    padding-top: 100px;
+    font-family: "M PLUS 1 Code", monospace;
+    /*背景色*/
+    background-color: rgb(215, 228, 227);
+        /*背景画像
+        background-image: url(jingyu.jpg);
+        /*重複しない
+        background-repeat: no-repeat;
+        /*背景画像　满屏
+        background-size: cover;*/
+    
+}
+
+/*タイトル*/
+header{
+    /*背景色*/
+    background-color: #fff5ee;
+    /*文字横並び*/
+    display: flex;
+    /*文字と図の距離*/
+    justify-content: space-between;
+    /*垂直*/
+    align-items: center;
+    /*上下との距離*/
+    padding: 10px 0;
+    /*ヘッダー部分を固定*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*logoサイズ*/
+.header-logo{
+    width: 200px;
+    /*辺に対する余白*/
+    margin: 10px;
+}
+
+/*画象のサイズ*/
+.header-logo img{
+    width: 100%;
+}
+
+/*menuクラス*/
+.menu{
+    /*文字の横並び*/
+    display: flex;
+    /*文字の間の距離*/
+    gap: 0 20px;
+    /*文字は辺に対する距離*/
+    margin-right: 50px;
+}
+
+/*中间*/
+.all-content{
+    /*占める面積*/
+    width: 90%;
+    /*真ん中*/
+    margin: 0 auto;
+}
+
+/*背景画像*/
+.main-visual{
+    /*画像追加*/
+    background-image: url(./qie.JPG);
+    /*高さ*/
+    height: 500px;
+    /*重複しない*/
+    background-repeat: no-repeat;
+    /*画像サイズ*/
+    background-size: 100% 100%;
+    /*文字を画像の中央にもってくる*/
+    display: flex;
+    /*左右真ん中*/
+    justify-content: center;
+    /*上下真ん中*/
+    align-items: center;
+}
+
+/*【blog一覧】の修正*/
+.blog-content h2{
+    /*真ん中*/
+    text-align: center;
+    /*上下との距離*/
+    padding: 50px 0;
+}
+
+
+/*記事図について*/
+.blog-all{
+    /*横並び*/
+    display: flex;
+    /*真ん中*/
+    justify-content: center;
+    /*折り返しの設定*/
+    flex-wrap: wrap;
+    /*上下左右の余白*/
+    gap: 20px 20px;
+}
+
+/**/
+article{
+    /*図の比例*/
+    width: 30%;
+    /*罫線*/
+    bottom: 20px solid black;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/*図のサイズ*/
+article a img{
+    width: 70%;
+}
+
+/*記事の内容は辺に対する余白*/
+.blog-footer{
+    /*右側寄せて*/
+    text-align: right;
+    /*辺に対する距離*/
+    padding-right: 150px;
+}
+
+/*一番下*/
+footer{
+    /*色*/
+    background-color: #cccccc;
+    /*箱間の距離*/
+    margin-top: 60px;
+    /*真ん中*/
+    text-align: center;
+    /*文字と箱の間距離*/
+    padding: 30px 0;
+}
+
+
