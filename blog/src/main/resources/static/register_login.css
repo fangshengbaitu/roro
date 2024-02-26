@@ -31,7 +31,11 @@ header{
 }
 
 body{
+    /*上との距離*/
     padding-top: 200px;
+    /*背景色*/
+    background-color: #f7eaf4;
+    /*background-color: rgb(132, 203, 212);*/
 }
 
 /*logoサイズ*/
@@ -56,6 +60,8 @@ body{
     margin-right: 50px;
 }
 
+
+
 /*【新しいブログの追加】の修正*/
 .blog-content h2{
     /*真ん中*/
@@ -65,21 +71,23 @@ body{
 }
 
 .blog-content{
+    /*文字データの比率並び*/
     width: 90%;
     margin: 0 auto;
 }
+
 /*【内容】*/
 .list{
     /*text-align:center;*/
+    /*左右との距離*/
     width: 20%;
     margin: 100px auto 20px auto;
-    background-color: chocolate;
+    /*background-color: chocolate;*/
 }
 
 .label{
     width: 100px;
 }
-
 
 .title-1{
     display: flex;
@@ -88,9 +96,9 @@ body{
     margin: 20px 0;
 }
 
+/*ボタン*/
 .button{
     text-align: center;
-    
 }
 
 textarea{
