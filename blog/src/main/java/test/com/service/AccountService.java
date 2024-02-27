@@ -22,8 +22,10 @@ public class AccountService {
 	//userの登録処理と登録するためのチェック　boolean
 	//もし、findByName == null だったらsaveを使って保存処理をする
 	//そうでない場合は、保存処理をしない
-	public boolean accountUser(String name,String password,String email) {
+	//				             RegisterController と一致順番が重要
+	public boolean accountUser(String name,String email,String password) {
 		if(userRepo.findByName(name) == null) {
+			//　ACCOUNT.JAVAの順番と一致
 			userRepo.save(new Account(name,email,password));
 			return true;
 		}else {
@@ -34,10 +36,15 @@ public class AccountService {
 	
 	//findByNameAndPassword == null ログインしない　null
 	//そうでない場合はログインをする　ログインしているの情報を渡す
-//	public Account checkLogin(String name,String password,String email) {
-//		
-//	}
-//	
+	public Account checkLogin(String name,String password) {
+		Account account = userRepo.findByNameAndPassword(name,password);
+		if(account == null) {
+			return null;
+		}else {
+			return account;
+		}
+	}
+	
 	
 			  	
 }

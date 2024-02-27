@@ -19,9 +19,12 @@ public class RegisterController {
 		return "register";
 	}
 
+	//もし、accuntservice.accountUser == true　login.html
+	//そうでない場合は、register.html
 	@PostMapping("/register")
 	public String register(@RequestParam String name,
 			@RequestParam String email,@RequestParam String password) {
+		//							順番が重要
 		if(accuntservice.accountUser(name,email,password)) {
 			return "login.html";
 		}else {

@@ -147,4 +147,27 @@ footer{
     padding: 30px 0;
 }
 
+/*【new-blog】について*/
+.new-blog{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button{
+	/*ボタンの背景色*/
+	background-color: rgb(247,144,161);
+    /*文字色*/
+    color: #fff;
+    /*文字サイズ*/
+    font-size: 20px;
+    /*長さ*/
+    width: 250px;
+    /*幅さ*/
+    padding: 10px 0;
+    /*選択ヒント*/
+    border: 2px solid transparent;
+    /*欄の飾り*/
+    border-radius: 20px;
+}
+
 

@@ -13,9 +13,9 @@
         <nav>
             <ul class="menu">
                 <li><a href="#">ホーム</a></li>
-                <li><a href="/blog">ブログ一覧</a></li>
+                <li><a th:href="@{/blog}">ブログ一覧</a></li>
                 <li><a href="#">お問合せ</a></li>
-                <li><a href="/login">ログアウト</a></li>
+                <li><a th:href="@{/logout}">ログアウト</a></li>
                 <span class="material-symbols-outlined">search
                 </span><input type="text" placeholder="検索欄">
             </ul>
@@ -29,42 +29,21 @@
             <section class="blog-content">
                 <h2>ブログ一覧</h2>
                 <div class="blog-all">
-                    <article>
+                    <article th:each="blog:${blogList}">
                         <a href="#">
                             <img src="tuzi.JPG" alt="">
                             <div class="blog-word">
-                                <p>天王盖地虎</p>
+                                <p th:text="${blog.blogTitle}"></p>
                             </div>
                             <div class="blog-footer">
                                 <p class="blog-tag">#茕兔</p>
-                                <p class="blog-date">2024/02/22</p>
+                                <p th:text="${blog.blogDate}" class="blog-date"></p>
                             </div>
                         </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <img src="usagi.png" alt="">
-                            <div class="blog-word">
-                                <p>宝塔镇河妖</p>
-                            </div>
-                            <div class="blog-footer">
-                                <p class="blog-tag">#茕兔</p>
-                                <p class="blog-date">2024/02/22</p>
-                            </div>
-                        </a>
-                    </article>
-                    <article>
-                        <a href="#">
-                            <img src="usagi2.png" alt="">
-                            <div class="blog-word">
-                                <p>12345</p>
-                            </div>
-                            <div class="blog-footer">
-                                <p class="blog-tag">#茕兔</p>
-                                <p class="blog-date">2024/02/22</p>
-                            </div>
-                        </a>
-                    </article>
+                    </article>             
+                </div>
+                <div class="new-blog">
+                        <a th:href="@{/blog/register}" class="button">新たなブログ</a>
                 </div>
             </section>
         </div>

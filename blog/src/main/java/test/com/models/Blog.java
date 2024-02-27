@@ -8,35 +8,38 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table
-public class blog {
+public class Blog {
 	
+
+
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private long blogId;
+	private Long blogId;
 	
 	private String blogArticle;
-	private String blogInfo;
+	private String blogDate;
 	private String blogTitle;
+	private Long userId;
 	
 	//空　コンストラクタ
-	public blog() {
+	public Blog() {
 
 	}
 	
-	public blog(String blogArticle, String blogInfo, String blogTitle) {
+	public Blog(String blogArticle, String blogDate, String blogTitle, Long userId) {
 		this.blogArticle = blogArticle;
-		this.blogInfo = blogInfo;
+		this.blogDate = blogDate;
 		this.blogTitle = blogTitle;
+		this.userId = userId;
 	}
 
-	
 	//カプセル化
-	public long getBlogId() {
+	public Long getBlogId() {
 		return blogId;
 	}
 
-	public void setBlogId(long blogId) {
+	public void setBlogId(Long blogId) {
 		this.blogId = blogId;
 	}
 
@@ -48,12 +51,12 @@ public class blog {
 		this.blogArticle = blogArticle;
 	}
 
-	public String getBlogInfo() {
-		return blogInfo;
+	public String getBlogDate() {
+		return blogDate;
 	}
 
-	public void setBlogInfo(String blogInfo) {
-		this.blogInfo = blogInfo;
+	public void setBlogDate(String blogDate) {
+		this.blogDate = blogDate;
 	}
 
 	public String getBlogTitle() {
@@ -63,6 +66,17 @@ public class blog {
 	public void setBlogTitle(String blogTitle) {
 		this.blogTitle = blogTitle;
 	}
+
+	public Long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Long userId) {
+		this.userId = userId;
+	}
+
+	
+
 	
 	
 	
